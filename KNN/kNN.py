@@ -44,5 +44,6 @@ def classify0 (intX, dataSet, labels, k):
     return sortedClassCount[0][0]
 
 if __name__ == '__main__':
-    createDataSet()
-    pass
+    group, labels = createDataSet()
+    res = classify0(0.1, group, labels, 4)
+    print '-----', res
